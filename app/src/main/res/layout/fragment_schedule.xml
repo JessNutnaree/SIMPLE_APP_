@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Schedule">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#F4F4F4" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#F8CF78"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ListView
+        android:id="@+id/notesList"
+        android:layout_width="match_parent"
+        android:layout_height="442dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="115dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/avatayellowr" />
+
+    <ImageButton
+        android:id="@+id/addMemo"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/addnew"
+        android:backgroundTint="#C5AB5E" />
+
+
+    <TextView
+        android:id="@+id/accountname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="77dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#ECC675"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/slide_in_right"
+        android:measureAllChildren="true"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/map"
+            layout="@layout/fragmentlayout" />
+
+        <include
+            android:id="@+id/includedLayout1"
+            layout="@layout/note_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/view_flipper3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/slide_in_right"
+        android:measureAllChildren="true"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/map2"
+            layout="@layout/fragmentlayout2" />
+
+        <include
+            android:id="@+id/includedLayout2"
+            layout="@layout/editlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+
+
+
+
+</RelativeLayout>

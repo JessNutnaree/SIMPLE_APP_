@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homework"
+        android:title="Homework"
+        android:icon="@drawable/hwicon" />
+
+    <item
+        android:id="@+id/schedule"
+        android:title="Memo"
+        android:icon="@drawable/memo"/>
+    <item
+        android:id="@+id/grade"
+        android:title="Calculator"
+        android:icon="@drawable/gicon"/>
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/accicon"/>
+
+
+</menu>

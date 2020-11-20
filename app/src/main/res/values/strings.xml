@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dotdotdot">%1$s.%2$s</string>
+    <string name="yes">yes</string>
+    <string name="textview">TextView</string>
+    <string name="no">no</string>
+</resources>

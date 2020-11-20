@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/confirm1"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Insert default time"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dueTimeDefault1"
+        android:layout_width="146dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-10dp"
+        android:hint="Due time:"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/clockDefault"
+        android:layout_width="40dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-35dp"
+        app:srcCompat="@drawable/clock" />
+
+    <Button
+        android:id="@+id/saveB"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFEFEFEF"
+        android:backgroundTint="@color/yellow"
+        android:text="save" />
+
+
+</LinearLayout>
